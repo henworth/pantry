@@ -5,6 +5,7 @@ description = "Pantry items microservice (FastAPI + SQLAlchemy + Postgres)"
 requires-python = ">=3.12"
 dependencies = [
   "fastapi>=0.115",
+  "mangum>=0.19",
   "psycopg[binary]>=3.2",
   "pydantic>=2",
   "pydantic-settings>=2",
