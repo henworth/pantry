@@ -56,6 +56,9 @@ jobs:
         with:
           context: .
           push: true
+          platforms: linux/amd64
+          provenance: false
+          sbom: false
           tags: |
             ${{ steps.ecr.outputs.registry }}/pantry:${{ github.sha }}
             ${{ steps.ecr.outputs.registry }}/pantry:branch-${{ steps.branch.outputs.slug }}
