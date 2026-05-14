@@ -46,7 +46,7 @@ jobs:
           push: true
           tags: |
             ${{ steps.ecr.outputs.registry }}/pantry:${{ github.sha }}
-            ${{ steps.ecr.outputs.registry }}/pantry:branch-${{ github.head_ref }}
+            ${{ steps.ecr.outputs.registry }}/pantry:branch-${{ replace(github.head_ref, '/', '-') }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
