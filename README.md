@@ -4,7 +4,7 @@ FastAPI + SQLAlchemy + Postgres CRUD service for pantry items. Managed with `uv`
 
 ## Endpoints
 
-All endpoints are served under `${API_PREFIX}` (default `/pantry`). When deployed to an ephemeral environment, the prefix becomes `/<envName>/pantry`.
+All endpoints are served under `${API_PREFIX}` (default `/pantry`).
 
 | Method | Path | Description |
 | --- | --- | --- |
